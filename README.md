@@ -106,7 +106,7 @@ The hardware setup includes the conveyor belt system and the smart robot. The co
 ## Project Demo
 Check out the demo video below:
 
-[![Watch the video](https://img.youtube.com/vi/tT_X2U2kYsw/maxresdefault.jpg)](https://youtu.be/tT_X2U2kYsw)
+[![Watch the video]([https://img.youtube.com/vi/tT_X2U2kYsw/maxresdefault.jpg](https://i9.ytimg.com/vi_webp/tT_X2U2kYsw/mqdefault.webp?v=65a32e66&sqp=CPS1o74G&rs=AOn4CLD0JTdQmYi_OkOjwOSAJCKbpoY_qQ))](https://youtu.be/tT_X2U2kYsw)
 
 ---
 
