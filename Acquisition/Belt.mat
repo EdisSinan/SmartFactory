@@ -1,0 +1,36 @@
+% Load data from the Excel file
+data = readtable('robot_states.xlsx'); % Adjust the file name to match your Excel file
+ 
+% Extract columns from the table
+time = data.Time;
+Ir1 = data.Ir1;
+Ir2 = data.Ir2;
+Motor1 = data.Motor1;
+Motor2 = data.Motor2;
+ 
+% Plot the data
+figure;
+ 
+subplot(3, 1, 1);
+plot(time, Ir1, 'r', 'LineWidth', 1);
+xlabel('Time (seconds)');
+ylabel('Ir1');
+title('Ir1 over Time');
+ 
+subplot(3, 1, 2);
+plot(time, Ir2, 'b', 'LineWidth', 1);
+xlabel('Time (seconds)');
+ylabel('Ir2');
+title('Ir2 over Time');
+ 
+subplot(3, 1, 3);
+plot(time, Motor1, 'g', 'LineWidth', 1, 'DisplayName', 'Motor1');
+hold on;
+plot(time, Motor2, 'm', 'LineWidth', 1, 'DisplayName', 'Motor2');
+xlabel('Time (seconds)');
+ylabel('Motor1 and Motor2');
+legend('show');
+title('Motor1 and Motor2 over Time');
+ 
+% Adjust figure settings
+set(gcf, 'Position', [100, 100, 800, 600]);
